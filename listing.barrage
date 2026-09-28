@@ -1,0 +1,43 @@
+# Tempo
+
+> A local temperature desk for Grok jobs that starts from the seed high-high-low-high and does not need an API key.
+
+## Purpose
+Explain the Tempo sandbox as a place to set heat for work without calling a paid key. Source: fitzyracing1/tempo.
+
+## How it works (plain English)
+1. Open the desk.
+2. Start from the seed pattern HHLH.
+3. Run a job at those heats.
+4. Stay offline to the paid API.
+
+## Key ideas
+- Temperature desk (a place to set how hot a pass is)
+- Seed HHLH (the starting heat pattern)
+- No API key (the sandbox does not need a paid token)
+
+## The actual code
+```
+# source: fitzyracing1/tempo
+seed = HHLH
+open_desk()
+run_job(seed)
+```
+
+## Line-by-line translation
+1. seed = HHLH → “start with that four-letter heat pattern”
+2. open_desk() → “open the local temperature desk”
+3. run_job(seed) → “run one job under that seed”
+
+## Decisions the program makes
+- If a key is missing → keep running in the sandbox
+- If a job is named → apply the seed heats
+
+## What a person would notice
+Heat is chosen locally. No key dialog.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open fitzyracing1/tempo and start one seeded job.
